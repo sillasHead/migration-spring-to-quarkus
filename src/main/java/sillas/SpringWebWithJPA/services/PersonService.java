@@ -1,12 +1,12 @@
-package sillas.SpringWebWithJPA.services;
+package sillas.SpringWebWithJpa.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import sillas.SpringWebWithJPA.entities.Person;
-import sillas.SpringWebWithJPA.repositories.PersonRepository;
+import sillas.SpringWebWithJpa.entities.Person;
+import sillas.SpringWebWithJpa.repositories.PersonRepository;
 
 @Service
 public class PersonService {

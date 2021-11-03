@@ -1,10 +1,10 @@
-package sillas.SpringWebWithJPA.repositories;
+package sillas.SpringWebWithJpa.repositories;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import sillas.SpringWebWithJPA.entities.Person;
+import sillas.SpringWebWithJpa.entities.Person;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
 

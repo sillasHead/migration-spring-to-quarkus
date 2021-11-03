@@ -1,4 +1,4 @@
-package sillas.SpringWebWithJPA.entities;
+package sillas.SpringWebWithJpa.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,10 +10,10 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-    public String name;
-    public String lastName;
-    public Integer age;
+    private Long id;
+    private String name;
+    private String lastName;
+    private Integer age;
     
     public Person() {
     }
