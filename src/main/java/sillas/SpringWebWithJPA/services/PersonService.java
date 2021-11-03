@@ -18,8 +18,20 @@ public class PersonService {
         return repository.findAll();
     }
 
-    public Person findById(Long id) {
-        return repository.findById(id).get();
+    public List<Person> findByName(String name) {
+        return repository.findByName(name);
+    }
+
+    public List<Person> findByNameOrderByAge(String name) {
+        return repository.findByNameOrderByAge(name);
+    }
+
+    public Person findByIdentifier(Long id) {
+        return repository.findByIdentifier(id);
+    }
+
+    public List<Person> findOfAgeOlderThan(Integer age) {
+        return repository.findOfAgeOlderThan(age);
     }
 
     public Person save(Person person) {
@@ -33,12 +45,8 @@ public class PersonService {
         personToUpdate.setAge(person.getAge());
         return repository.save(personToUpdate);
     }
-    
+
     public void deleteById(Long id) {
         repository.deleteById(id);
-    }
-
-    public List<Person> findByName(String name) {
-        return repository.findByName(name);
     }
 }
