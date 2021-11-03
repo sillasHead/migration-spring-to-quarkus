@@ -1,0 +1,1 @@
+insert into person (id, name, lastname, age) values (default, 'sillas', 'cavalcante', 20);
